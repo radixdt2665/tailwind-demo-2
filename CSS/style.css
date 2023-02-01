@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "rockwell";
+  src: url(../fonts/ROCK.TTF);
+}
+
+@font-face {
+  font-family: "NunitoSans";
+  src: url(../fonts/NunitoSans-Regular.ttf);
+}
+
+html,body{font-family: "NunitoSans";}
+
+:root{
+    --theme-color: #0a5c2c;
+}
+.font-rockwell {font-family: "rockwell";}
+
+
+/* navbar-main css start */
+.navbar-main.darkHeader{position: fixed;background: #0a5c2c;padding: 15px 0;z-index: 9999;}
+.navbar-main .header-link {background-image: linear-gradient(to right,#d69f3b,#d69f3b 50%,#ffffff 50%);background-size: 200% 100%;background-position: -100%;display: inline-block;padding: 5px 0;position: relative;-webkit-background-clip: text;-webkit-text-fill-color: transparent;transition: all 0.3s ease-in-out;font-weight: bold;}
+.navbar-main .header-link:before {content: '';background: #d69f3b;display: block;position: absolute;bottom: -3px;left: 0;width: 0;height: 3px;transition: all 0.3s ease-in-out;}
+.navbar-main .header-link:hover {background-position: 0;}
+.navbar-main .header-link:hover::before {width:100%;}
+/* navbar-main css start */
+
+
+/* banner-section css start */
+/* banner-section css start */
+
+
+/* recipe-section css start */
+.recipe-section .slick-dots{display: flex;justify-content: center;gap: 10px;padding-top: 20px;}
+.recipe-section .slick-dots li{height: 20px;width: 20px;background: #ffffff;border-radius: 50%;color: transparent;border: 3px solid #d5d2d2;cursor: pointer;}
+.recipe-section .slick-dots li.slick-active{border-color: #0a5c2c;}
+.recipe-section .slick-dots li button{display: none;}
+/* recipe-section css end */
+
+
+/* order-now-section css start */
+/* order-now-section css end */
+
+/* great-quality-section css start */
+/* great-quality-section css end */
+
+
+/* order-now-gray-section css start */
+/* order-now-gray-section css end */
+
+
+/* quality-bg-pink css start */
+/* quality-bg-pink css end */
+
+
+/* how-work-section css start */
+.how-work-section{position: relative;}
+.how-work-section::before{position: absolute;content: '';background-image: url(../images/bg-right.png);right: 0;width: 250px;height: 250px;top: 0;}
+.how-work-section::after{position: absolute;content: '';background-image: url(../images/bg-left.png);left: 0;width: 250px;height: 300px;bottom: 0;background-size: contain;background-repeat: no-repeat;}
+.how-work-section .skew-shape{position: relative;}
+.how-work-section .skew-shape::before,
+.how-work-section .skew-shape::after{transform: skewX(155deg);position: absolute;content: "";height: 90px;width: 70px;}
+.how-work-section .skew-shape::after{opacity: 0.5;top: 10px;left: 10px;}
+
+.how-work-section .skew-shape.shape-purple::before,
+.how-work-section .skew-shape.shape-purple::after{background-color:#aa7dc1 ;}
+
+.how-work-section .skew-shape.shape-yellow::before,
+.how-work-section .skew-shape.shape-yellow::after{background-color:#f6bd55 ;}
+
+.how-work-section .skew-shape.shape-pink::before,
+.how-work-section .skew-shape.shape-pink::after{background-color:#f69191 ;}
+.how-work-section .icon-img{padding-top: 20px;padding-left: 15px;height: 80px;}
+
+/* how-work-section css end */
+
+
+/* best-chef-section css start */
+.best-chef-section{background-color: #f4f4f4;position: relative;}
+.best-chef-section::after{position: absolute;content: '';background-image: url(../images/best-chef-bg.png);background-size: cover;width: 12%;height: 35%;bottom: 0;right: 25%;background-repeat: no-repeat;}
+.best-chef-section .bg-custom-blue{background-color: #30c4ba;position: relative;}
+.best-chef-section .bg-custom-blue::before{position: absolute;content: "";height: 400px;width: 230px;background-color: #f6bd55;transform: skewX(167deg);top: -14%;left: -5%;}
+.best-chef-section .bg-custom-blue::after{position: absolute;content: "";background-image: url(../images/person.png);z-index: 99;height: 430px;width: 270px;background-repeat: no-repeat;left: -9%;bottom: 0;background-size: cover;}
+/* best-chef-section css end */
+
+/* gallery-menu css start */
+.gallery-menu{background-image: url(../images/recipe-section/food-item-bg.jpg);background-repeat: no-repeat;background-size: auto;background-position: top;}
+.gallery-menu .img-p-div{position: relative;}
+.gallery-menu .img-p-div .hover-text{position: absolute;top: 50%;left: 50%;translate: -50% -50%;display: none;}
+.gallery-menu .img-p-div::after{background-color: #f6bd55 ;height: 100%;width: 100%;position: absolute;content: "";top: 0;left: 0;opacity: 0;transition: 0.4s all;}
+.gallery-menu .img-p-div:hover::after{opacity: 0.8;transition: 0.4s all;}
+.gallery-menu .img-p-div:hover .hover-text{display: block;z-index: 10;}
+.gallery-menu .img-p-div:hover{cursor: pointer;}
+/* gallery-menu css end */
+
+/* company-profile-section css start */
+.company-profile-section .sub-para{color: #666666;line-height: 30px;}
+.company-profile-section .fb-icon{background-color: #0084ff;transition: 0.4s all;}
+.company-profile-section .fb-icon:hover{border:1px solid #0084ff;background-color: transparent;color: #0084ff;transition: 0.4s all;}
+.company-profile-section .insta-icon{background-color: #c51def;transition: 0.4s all;}
+.company-profile-section .insta-icon:hover{border:1px solid #c51def;background-color: transparent;color: #c51def;transition: 0.4s all;}
+
+.company-profile-section .twitter-icon{background-color: #00d2ff;transition: 0.4s all;}
+.company-profile-section .twitter-icon:hover{border:1px solid #00d2ff;background-color: transparent;color: #00d2ff;transition: 0.4s all;}
+
+.company-profile-section .video-img{position: relative;}
+.company-profile-section .play-btn{width: 0;height: 0;border-top: 30px solid transparent;border-left: 60px solid #ffffff;border-bottom: 30px solid transparent;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+
+/* contact-us-section css start */
+/* .contact-us-section{background-image: url(../images/map-img.jpg);height: 100%;width: 100%;background-repeat: no-repeat;background-size: cover;} */
+.contact-us-section .card{border-radius: 10px;}
+.contact-us-section .bg-custom-green{background-color: #50e1d7;transition: 0.4s all;}
+.contact-us-section .bg-custom-green:hover{background-color: #42bbb2;transition: 0.4s all;}
+.contact-us-section input,.contact-us-section textarea{color: #a0aec0;background: #f7f7f7;padding: 10px 10px;display: block;width: 100%;border-radius: 5px;}
+/* contact-us-section css end */
+
+/* footer-main css start */
+.footer-main .footer-icon{color: #e5ab3f;transition: 0.4s all;}
+.footer-main .footer-icon:hover{background-color: transparent;transition: 0.4s all;border: 1px solid;}
+/* footer-main css end */
+
+@media(max-width:1366px){
+    /* .best-chef-section .bg-custom-blue::before,.best-chef-section .bg-custom-blue::after{display: none;} */
+  .best-chef-section::after{right: 0;}
+  .banner-section{min-height: 60vh;}
+  .navbar-main{background: #0a5c2c;padding: 15px 0;z-index: 9999;}
+  .navbar-main ul{display: none;position: absolute;width: 100%;background: #0a5c2c;left: 0;padding: 20px;top: 86px;}
+  .navbar-main .toggle-btn:focus{outline: 1px auto;padding: 10px;line-height: 0;}
+  .navbar-main ul li{padding: 10px 0;border-bottom: 1px solid #054a21;}
+  .navbar-main ul li:last-child{border: none;}
+  .navbar-main .toggle-btn{display: block;}
+
+}
+
+@media(max-width:1023px){
+  .best-chef-section .bg-custom-blue::before{display: none;}
+  .best-chef-section::after{display: none;}
+  .how-work-section::after{width: 150px;height: 200px;}
+  .how-work-section::before{width: 135px;height: 150px;background-size: contain;}
+
+  .best-chef-section .bg-custom-blue::after{height: 300px;width: 190px;background-size: contain;right: 0;left: 0;}
+}
+
+@media(max-width:639px){
+    .how-work-section .arrows i{transform: rotate(88deg);}
+    .how-work-section .skew-shape::after{left: 38%;}
+    .how-work-section .skew-shape::before{left: 35%;}
+    .how-work-section .icon-img{padding-left: 0;}
+    .best-chef-section .bg-custom-blue::after{display: none;}
+}
+
+@media(max-width:1535px) and (min-width:1024px){
+  .best-chef-section .bg-custom-blue::before{top: -14%;}
+}
+
+@media(max-width:1366px) and (min-width:1024px){
+  .best-chef-section .bg-custom-blue{width: 82.66%;}
+  .best-chef-section::after{width:25%;right: 5%;}
+  .best-chef-section .bg-icons{width: 70%;right: 0;top: -15%;}
+}
